@@ -11,6 +11,7 @@ jobs:
    test:
       environment: testing
       runs-on: ubuntu-latest
+      container: node:alpine3.18
       env:
          MONGODB_CONNECTION_PROTOCOL: mongodb+srv
          MONGODB_CLUSTER_ADDRESS: firstcluster.danzwdj.mongodb.net
